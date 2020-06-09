@@ -54,3 +54,10 @@ Run:
 ```shell
 ansible-playbook idbuntu.yml -e 'project_type=ideascube'
 ```
+
+You might want to run the playbook on a specific subset of hosts:
+
+
+```shell
+ansible-playbook idbuntu.yml -l malakasa-pc1,malakasa-pc3 -e 'project_type=ideascube'
+```
